@@ -2,6 +2,11 @@ import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { ActivatedRoute } from '@angular/router';
 
+import { NavbarComponent } from './navbar/navbar.component'; // your standalone component
+import { FooterComponent } from './footer/footer.component';
+
+import { RouterTestingModule } from '@angular/router/testing';
+
 const mockActivatedRoute = {
   snapshot: {
     paramMap: {
@@ -16,7 +21,7 @@ describe('AppComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent],
+      imports: [RouterTestingModule, NavbarComponent, FooterComponent],
       providers: [{ provide: ActivatedRoute, useValue: mockActivatedRoute }],
     }).compileComponents();
 
@@ -40,4 +45,3 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('app-footer')).toBeTruthy();
   });
 });
-
