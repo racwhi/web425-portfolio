@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
     <div class="notebook">
       <h1>About Me</h1>
       <p>
-        I'm a tech professional living in the Midwest .Outside of work, I’m
+        Hello, my name is Rachel and I'm a tech professional living in the Midwest .Outside of work, I’m
         committed to staying active and healthy through fitness. Whether it’s
         hitting the gym, going for a run, or trying out new workouts, fitness
         helps me stay focused and energized. Living in the Midwest has given me

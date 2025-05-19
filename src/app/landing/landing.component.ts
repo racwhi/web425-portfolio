@@ -23,7 +23,7 @@ import { Component } from '@angular/core';
       <br />
       <br />
       <p style="font-size: 50px;">
-        Explore my projects, experience, and more!
+        Explore Rachel's projects, experience, and more!
       </p>
     </div>
   `,
